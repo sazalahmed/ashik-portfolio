@@ -34,13 +34,16 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+    color: var(--colorWhite);
 }
 
 p,
 span {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 30px;
     margin: 0;
+    color: var(--paraColor);
 }
 
 body {
@@ -80,7 +83,7 @@ button {
 
 :root {
     --colorPrimary: #CDFE7D;
-    --paraColor: #ffffff80;
+    --paraColor: #ffffff85;
     --colorBlack: #000000;
     --colorWhite: #ffffff;
     --bodyFont: "Urbanist", sans-serif;
@@ -102,6 +105,17 @@ button {
     -o-transition: all linear .3s;
 }
 
+.common_btn i,
+.common_btn_2 i {
+    margin-left: 5px;
+}
+
+.common_btn:hover {
+    background: var(--colorPrimary);
+    color: var(--colorBlack);
+    border-color: var(--colorPrimary);
+}
+
 .common_btn_2:hover {
     background: var(--colorPrimary);
     border-color: var(--colorPrimary);
@@ -114,10 +128,80 @@ button {
     border-color: var(--colorPrimary);
 }
 
+.section_heading {
+    text-align: center;
+}
 
+.section_heading h5 {
+    position: relative;
+    color: var(--colorWhite);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
 
+.section_heading h5::before,
+.section_heading h5::after {
+    position: absolute;
+    content: "";
+    background: url(../images/heading_sghapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 10px;
+    top: 12px;
+    right: -60px;
+}
 
+.section_heading h5::after {
+    right: auto;
+    left: -60px;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
 
+.section_heading h2 {
+    color: var(--colorWhite);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.heading_left {
+    text-align: left;
+}
+
+.heading_left h5::after {
+    display: none;
+}
+
+.heading_left h2 {
+    text-align: left;
+}
+
+.title {
+    display: block;
+    color: var(--colorWhite);
+    font-size: 25px;
+    font-weight: 700;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.title:hover {
+    color: var(--colorPrimary);
+}
 
 /*==================================
     GLOBAL CSS END
@@ -146,6 +230,14 @@ button {
     left: 0;
     width: 100%;
     height: 90px;
+    z-index: 99;
+    padding: 0;
+    border-bottom: 1px solid transparent;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .main_menu .navbar-brand {
@@ -182,6 +274,13 @@ button {
     color: var(--colorPrimary);
 }
 
+
+.main_menu.sticky_menu {
+    background: var(--colorBlack);
+    top: 0;
+    border-color: rgb(255 255 255 / 16%);
+}
+
 /* menu end */
 
 
@@ -190,6 +289,20 @@ button {
     padding-top: 105px;
     height: 100vh;
     position: relative;
+}
+
+.banner::after {
+    position: absolute;
+    content: "";
+    background: url(../images/banner_shapes.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 440px;
+    height: 685px;
+    top: 150px;
+    left: 0;
+    z-index: -1;
 }
 
 .banner div {
@@ -212,11 +325,8 @@ button {
 }
 
 .banner_text p {
-    color: var(--colorWhite);
     font-size: 18px;
     font-weight: 400;
-    line-height: 30px;
-    opacity: .8;
     margin-top: 25px;
     margin-bottom: 45px;
 }
@@ -224,12 +334,6 @@ button {
 .banner_text ul {
     gap: 30px;
 }
-
-.banner_text ul li {}
-
-.banner_text ul li a {}
-
-.banner_text ul li .download_btn {}
 
 .banner_img {
     display: flex;
@@ -242,8 +346,253 @@ button {
     height: 600px;
 }
 
-
 /* banner end */
+
+
+/* about start */
+.about_us {
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    z-index: 1;
+    padding-bottom: 585px;
+}
+
+.about_us::after {
+    position: absolute;
+    content: "";
+    background: url(../images/about_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    z-index: -1;
+}
+
+.about_text p {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.about_text ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.about_text ul li {
+    position: relative;
+    width: 50%;
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.about_text ul li::after {
+    position: absolute;
+    content: "\f00c";
+    font-family: "font awesome 5 free";
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--colorPrimary);
+    top: 3px;
+    left: 0;
+}
+
+.about_text a {
+    border-color: var(--colorPrimary);
+}
+
+.about_us_img_1 {
+    padding-left: 30px;
+}
+
+.about_us_img_1 .img {
+    height: 345px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: -25px;
+    margin-left: auto;
+}
+
+.about_us_img_1 .text {
+    background: var(--colorBlack);
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about_us_img_1 .text span {
+    color: var(--colorWhite);
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.about_us_img_1 .text p {
+    display: inline;
+    max-width: 110px;
+}
+
+.about_us_img_2 {
+    height: 535px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 25px;
+    position: relative;
+}
+
+.about_us_img_2::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(0deg, #E8BF96 0%, rgba(232, 191, 150, 0.00) 41.56%);
+    bottom: 0;
+    left: 0;
+}
+
+/* about end */
+
+
+/* service start */
+.services {
+    margin-top: -450px;
+    position: relative;
+    z-index: 2;
+}
+
+.single_services {
+    padding: 40px 25px;
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: center;
+    background: #0D0D0D;
+    margin-top: 25px;
+}
+
+.single_services .icon {
+    width: 65px;
+    height: 65px;
+    display: block;
+    background: var(--colorPrimary);
+    padding: 8px;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.single_services .title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.single_services p {
+    margin-bottom: 30px;
+}
+
+.single_services .arrow img {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(10%) saturate(2143%) hue-rotate(351deg) brightness(132%) contrast(99%);
+}
+
+/* service end */
+
+
+/* project start  */
+.single_project {
+    margin-top: 60px;
+}
+
+.single_project_img {
+    border-radius: 30px;
+    overflow: hidden;
+    height: 345px;
+}
+
+.single_project_text {
+    padding: 45px 0px 50px 30px;
+    border-left: 1px solid var(--colorWhite);
+    position: relative;
+    margin-left: 80px;
+}
+
+.single_project_text::after,
+.single_project_text::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: var(--colorWhite);
+    top: 0px;
+    left: -4px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.single_project_text::before {
+    top: auto;
+    bottom: 0;
+}
+
+.single_project_text p {
+    color: var(--colorWhite);
+    margin-top: 22px;
+    margin-bottom: 27px;
+}
+
+.single_project_text ul li {
+    position: relative;
+    color: var(--colorWhite);
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.single_project_text ul li::after {
+    position: absolute;
+    content: "\f00c";
+    font-family: "font awesome 5 free";
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--colorWhite);
+    top: 5px;
+    left: 0;
+}
+
+/* project end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
