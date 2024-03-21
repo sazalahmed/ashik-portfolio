@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
-    <title>Ashik - Personal Portfolio HTML Template</title>
+    <title>Document</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/utilities.css">
 
+    <link rel="stylesheet" href="css/spacing.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR START -->
+    <!--=================================
+        MENU START
+    ==================================-->
     <nav class="navbar navbar-expand-lg main_menu">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Ashik" class="img-fluid">
+                <img src="images/logo.png" alt="Logo" class="img-fluid w-100">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,58 +33,360 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home<i class="far fa-angle-down"></i></a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#">Discover Plugins</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#">Paid Products</a>
                     </li>
                 </ul>
-                <a class="common_btn" href="#">contact us</a>
+                <ul class="right_menu d-flex flex-wrap">
+                    <li><a href="#">Upload your plugin</a></li>
+                    <li><a class="sign_in" href="#">Sign in</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-    <!-- NAVBAR END -->
+    <!--=================================
+        MENU START
+    ==================================-->
 
 
-    <!-- BANNER START -->
-    <section class="banner">
+
+    <!--=================================
+        PRODUCTS START
+    ==================================-->
+    <section class="wsus__products pt_165">
         <div class="container">
-            <div class="row justify-content-between align-items-center align-items-center">
-                <div class="col-xl-6">
-                    <div class="banner_text">
-                        <h1>Hello i’m Jane Cooper</h1>
-                        <p>A personal portfolio is a collection of your work, achievements, and skills that highlights
-                            your abilities and professional growth. It serves as </p>
-                        <ul class="d-flex flex-wrap">
-                            <li><a class="common_btn" href="#">View More</a></li>
-                            <li><a class="download_btn" href="#">Download Cv </a></li>
-                        </ul>
+            <div class="row">
+                <div class="col-xl-6 m-auto">
+                    <div class="headeing_area mb_25">
+                        <h2>Top Paid Products Worth Investing In</h2>
                     </div>
                 </div>
-                <div class="col-xl-5">
-                    <div class="banner_img">
-                        <div class="img">
-                            <img src="images/banner_img.png" alt="banner" class="img-fluid">
+            </div>
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_2.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$69</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(24)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">DegMark</a>
+                            <h5 class="title">DegMark - Digital Products Buy Sell Marketplace Laravel Script</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_3.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$55</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(36)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">TopLand</a>
+                            <h5 class="title">TopLand - Real estate multi purpose HTML template</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_4.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$99</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(30)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">UniFood</a>
+                            <h5 class="title">UniFood - Single Restaurant Food Ordering System</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_5.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$40</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(27)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">Aabcserv</a>
+                            <h5 class="title">Aabcserv - Multivendor On-Demand Service & Handyman Marketplace</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_6.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$60</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(48)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">AI-Techy</a>
+                            <h5 class="title">AI-Techy - AI Content Generator Tool with SAAS Module</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_7.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$55</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(16)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">DocPoint</a>
+                            <h5 class="title">DocPoint - Doctor Appointment System with Subscription (SAAS)</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_8.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$49</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(42)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">Consilt</a>
+                            <h5 class="title">Consilt - Multi Purpose Business and Consulting Website CMS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_9.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$65</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(21)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">TopLand</a>
+                            <h5 class="title">TopLand - Laravel real estate agency portal with saas</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_2.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$75</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(30)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">TopCommerce</a>
+                            <h5 class="title">TopCommerce - Laravel Multi Vendor eCommerce Script</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_7.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$55</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(16)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">DocPoint</a>
+                            <h5 class="title">DocPoint - Doctor Appointment System with Subscription (SAAS)</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_8.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$49</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(42)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">Consilt</a>
+                            <h5 class="title">Consilt - Multi Purpose Business and Consulting Website CMS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="wsus__single_product">
+                        <a href="#" class="wsus__single_product_img">
+                            <img src="images/product_img_9.png" alt="Product" class="img-fluid w-100">
+                        </a>
+                        <div class="wsus__single_product_text">
+                            <span class="price">$65</span>
+                            <p class="category">
+                                php-scripts
+                                <span>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <b>(21)</b>
+                                </span>
+                            </p>
+                            <a class="pro_name" href="#">TopLand</a>
+                            <h5 class="title">TopLand - Laravel real estate agency portal with saas</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- BANNER END -->
+    <!--=================================
+        PRODUCTS END
+    ==================================-->
 
 
-
-
+    <!--=================================
+        FOOTER START
+    ==================================-->
+    <footer class="mt_100">
+        <div class="container">
+            <div class="Subscribe_area">
+                <div class="row align-items-center">
+                    <div class="col-xl-7">
+                        <div class="wsus__subscribe_text">
+                            <h3>Subscribe to our newsletter</h3>
+                            <p>The latest news, articles, and resources, sent to your inbox weekly.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <form class="wsus__subscribe_form">
+                            <input type="text" placeholder="Email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="wsus__copyright">
+                <p>© 2024 AppeyTech. All rights reserved.</p>
+                <ul class="d-flex flex-wrap">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--=================================
+        FOOTER END
+    ==================================-->
 
 
 
