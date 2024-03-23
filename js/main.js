@@ -59,11 +59,19 @@ $(function () {
     });
 
 
+    // Counter js
+    $('.count').countUp();
 
 
-
-
-
+    // Marquee animation
+    $('.marquee_animi').marquee({
+        speed: 70,
+        gap: 70,
+        delayBeforeStart: 0,
+        direction: 'left',
+        duplicated: true,
+        pauseOnHover: true
+    });
 
 
 
