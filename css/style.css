@@ -113,7 +113,7 @@ button {
 .common_btn:hover {
     background: var(--colorPrimary);
     color: var(--colorBlack);
-    border-color: var(--colorPrimary);
+    border-color: var(--colorPrimary) !important;
 }
 
 .common_btn_2:hover {
@@ -153,7 +153,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     width: 50px;
-    height: 10px;
+    height: 12px;
     top: 12px;
     right: -60px;
 }
@@ -536,6 +536,7 @@ button {
 }
 
 .single_project_img {
+    display: block;
     border-radius: 30px;
     overflow: hidden;
     height: 345px;
@@ -622,6 +623,9 @@ button {
 /* review start */
 .reviews {
     position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    overflow: hidden;
 }
 
 .reviews::after {
@@ -631,10 +635,10 @@ button {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 92%;
+    width: 100%;
     height: 100%;
     top: 0;
-    left: 80px;
+    left: 0;
     border-radius: 30px;
     z-index: -1;
     -webkit-border-radius: 30px;
@@ -821,7 +825,7 @@ button {
 .contact_bg_area {
     background: #0D0D0D;
     border-radius: 30px;
-    padding: 100px 60px;
+    padding: 100px 60px 60px 60px;
 }
 
 .contact_info {
@@ -986,6 +990,8 @@ footer {
     text-align: center;
     background: var(--colorPrimary);
     color: var(--colorBlack);
+    border-radius: 50%;
+    padding-right: 4px;
 }
 
 .footer_left ul {
@@ -1041,18 +1047,13 @@ footer {
     border-color: var(--colorPrimary);
 }
 
-
 .footer_copyright {
     padding-bottom: 35px;
 }
 
-.footer_copyright p {}
-
 .footer_copyright ul {
     gap: 10px 35px;
 }
-
-.footer_copyright ul li {}
 
 .footer_copyright ul li a {
     color: var(--paraColor);
@@ -1073,4 +1074,237 @@ footer {
 /* footer end */
 /*==================================
     HOME PAGE 01 END
+==================================*/
+
+
+/*==================================
+    HOME PAGE 01 DARK START
+==================================*/
+.home1_light {
+    background: var(--colorWhite);
+}
+
+.home1_light h1,
+.home1_light h2,
+.home1_light h3,
+.home1_light h4,
+.home1_light h5,
+.home1_light h6 {
+    color: var(--colorBlack);
+}
+
+
+.home1_light p,
+.home1_light span {
+    color: #5A5A5A;
+}
+
+.home1_light .main_menu .navbar-nav .nav-item .nav-link {
+    color: var(--colorBlack);
+}
+
+.home1_light .common_btn {
+    color: var(--colorBlack);
+    border-color: rgba(0, 0, 0, 0.20);
+}
+
+.home1_light .banner::after {
+    background: url(../images/banner_shapes_2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home1_light .banner_img .img {
+    height: 525px;
+}
+
+.home1_light .main_menu.sticky_menu {
+    background: var(--colorWhite);
+    border-color: rgb(125 125 125 / 16%);
+}
+
+.home1_light .about_us::after {
+    background: url(../images/about_bg_2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home1_light .section_heading h5::before,
+.home1_light .section_heading h5::after {
+    background: url(../images/heading_sghapes_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home1_light .about_text ul li {
+    color: var(--colorBlack);
+}
+
+.home1_light .about_text ul li::after {
+    font-weight: 600;
+    color: var(--colorBlack);
+}
+
+.home1_light .about_us_img_1 .text {
+    background: var(--colorWhite);
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+}
+
+.home1_light .about_us_img_1 .text span {
+    color: var(--colorBlack);
+}
+
+.home1_light .about_us_img_1 .text p {
+    color: var(--colorBlack);
+}
+
+.home1_light .single_services {
+    background: var(--colorWhite);
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+}
+
+.home1_light .title {
+    color: var(--colorBlack);
+}
+
+.home1_light .single_services .arrow img {
+    filter: none;
+}
+
+.home1_light .single_project_text ul li {
+    color: #5A5A5A;
+}
+
+.home1_light .single_project_text ul li::after {
+    color: var(--colorBlack);
+}
+
+.home1_light .single_project_text {
+    border-color: #CCCCCC;
+}
+
+.home1_light .single_project_text::after,
+.home1_light .single_project_text::before {
+    background: #CCCCCC;
+}
+
+.home1_light .project_learn_btn a {
+    color: var(--colorBlack);
+}
+
+.home1_light .reviews::after {
+    background: url(../images/testimonial_bg_2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reviews_2 .section_heading h5,
+.reviews_2 .section_heading h2 {
+    color: var(--colorWhite);
+}
+
+.reviews_2 .section_heading h5::before,
+.reviews_2 .section_heading h5::after {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(68%) saturate(377%) hue-rotate(280deg) brightness(106%) contrast(106%);
+    -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(68%) saturate(377%) hue-rotate(280deg) brightness(106%) contrast(106%);
+}
+
+.home1_light .single_review {
+    background: var(--colorWhite);
+}
+
+.home1_light .single_review_top .text h3 {
+    color: var(--colorBlack);
+}
+
+.home1_light .single_review .rating {
+    color: var(--colorBlack);
+}
+
+.home1_light .contact_bg_area {
+    background: #F6F7F9;
+}
+
+.home1_light .contact_form {
+    background: var(--colorWhite);
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+}
+
+.home1_light .contact_info .call_mail {
+    color: #5A5A5A;
+}
+
+.home1_light .contact_info .call_mail span {
+    color: var(--colorBlack);
+}
+
+.home1_light .contact_form form input,
+.home1_light .contact_form form textarea {
+    border: 1px solid #CCCCCC;
+}
+
+.home1_light .marquee_animi ul li a {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(1%) saturate(283%) hue-rotate(336deg) brightness(97%) contrast(98%);
+    -webkit-filter: brightness(0) saturate(100%) invert(83%) sepia(1%) saturate(283%) hue-rotate(336deg) brightness(97%) contrast(98%);
+}
+
+.home1_light footer {
+    background: #F6F7F9;
+}
+
+.home1_light .footer_left h2 img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7444%) hue-rotate(146deg) brightness(109%) contrast(112%);
+    -webkit-filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7444%) hue-rotate(146deg) brightness(109%) contrast(112%);
+}
+
+.home1_light .footer_left h2 span {
+    color: var(--colorBlack);
+}
+
+.home1_light .footer_left p {
+    background: var(--colorWhite);
+    color: var(--colorBlack);
+}
+
+.home1_light .footer_left ul li a {
+    background: var(--colorWhite);
+    color: var(--colorBlack);
+}
+
+.home1_light .footer_left ul li a:hover {
+    color: var(--colorWhite);
+    background: var(--colorBlack);
+}
+
+.home1_light .footer_right ul li a {
+    color: var(--colorBlack);
+}
+
+.home1_light .footer_right ul li a:hover {
+    border-color: var(--colorBlack);
+    color: var(--colorBlack);
+}
+
+.home1_light .footer_copyright ul li a {
+    color: #5A5A5A;
+}
+
+.home1_light .progress-wrap {
+    background: var(--colorWhite);
+}
+
+.home1_light .progress-wrap svg.progress-circle path {
+    stroke: var(--colorBlack);
+}
+
+.home1_light .progress-wrap::before {
+    color: var(--colorBlack);
+}
+
+/*==================================
+    HOME PAGE 01 DARK END
 ==================================*/
