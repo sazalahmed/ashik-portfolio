@@ -34,7 +34,7 @@ $(function () {
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             },
             {
@@ -50,7 +50,48 @@ $(function () {
                 }
             },
             {
-                breakpoint: 576,
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
+
+
+    // project_2 Slider
+    $('.project_2_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        variableWidth: true,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 575,
                 settings: {
                     slidesToShow: 1,
                 }
@@ -74,7 +115,19 @@ $(function () {
     });
 
 
+    // Menu 2 search
+    $(".search_btn").on("click", function () {
+        $(".menu_2_search").addClass("show_search");
+    });
+    $(".close_btn").on("click", function () {
+        $(".menu_2_search").removeClass("show_search");
+    });
 
+
+    //=======SMALL DEVICE MENU ICON======
+    $(".navbar-toggler").on("click", function () {
+        $(".navbar-toggler").toggleClass("show");
+    });
 
 
 });
